@@ -9,14 +9,15 @@
   </head>
   <body>
     <div class="calculator">
+      <div class="history output"></div>
       <div class="display output"></div>
       <button class="all-clear span-two" onclick="allClear()">AC</button>
       <button class="backspace" onclick="backspace()">DEL</button>
-      <button class="operation" onclick="insertNum(`÷`)">÷</button>
+      <button class="operation" onclick="insertNum(`/`)">/</button>
       <button class="number" onclick="insertNum(7)">7</button>
       <button class="number" onclick="insertNum(8)">8</button>
       <button class="number" onclick="insertNum(9)">9</button>
-      <button class="operation" onclick="insertNum(`x`)">x</button>
+      <button class="operation" onclick="insertNum(`*`)">*</button>
       <button class="number" onclick="insertNum(4)">4</button>
       <button class="number" onclick="insertNum(5)">5</button>
       <button class="number" onclick="insertNum(6)">6</button>
@@ -25,7 +26,7 @@
       <button class="number" onclick="insertNum(2)">2</button>
       <button class="number" onclick="insertNum(3)">3</button>
       <button class="operation" onclick="insertNum(`+`)">+</button>
-      <button class="number" onclick="insertNum(`.`)">.</button>
+      <span></span>
       <button class="number" onclick="insertNum(0)">0</button>
       <button class="equal span-two" onclick="equal()">=</button>
     </div>
