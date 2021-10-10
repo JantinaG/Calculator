@@ -9,25 +9,25 @@
   </head>
   <body>
     <div class="calculator">
-      <div class="display">123</div>
-      <button class="all-clear span-two">AC</button>
-      <button class="delete">C</button>
-      <button class="operation">÷</button>
-      <button class="number">7</button>
-      <button class="number">8</button>
-      <button class="number">9</button>
-      <button class="operation">x</button>
-      <button class="number">4</button>
-      <button class="number">5</button>
-      <button class="number">6</button>
-      <button class="operation">-</button>
-      <button class="number">1</button>
-      <button class="number">2</button>
-      <button class="number">3</button>
-      <button class="operation">+</button>
-      <button class="number">.</button>
-      <button class="number">0</button>
-      <button class="equal span-two">=</button>
+      <div class="display output"></div>
+      <button class="all-clear span-two" onclick="allClear()">AC</button>
+      <button class="backspace" onclick="backspace()">DEL</button>
+      <button class="operation" onclick="insertNum(`÷`)">÷</button>
+      <button class="number" onclick="insertNum(7)">7</button>
+      <button class="number" onclick="insertNum(8)">8</button>
+      <button class="number" onclick="insertNum(9)">9</button>
+      <button class="operation" onclick="insertNum(`x`)">x</button>
+      <button class="number" onclick="insertNum(4)">4</button>
+      <button class="number" onclick="insertNum(5)">5</button>
+      <button class="number" onclick="insertNum(6)">6</button>
+      <button class="operation" onclick="insertNum(`-`)">-</button>
+      <button class="number" onclick="insertNum(1)">1</button>
+      <button class="number" onclick="insertNum(2)">2</button>
+      <button class="number" onclick="insertNum(3)">3</button>
+      <button class="operation" onclick="insertNum(`+`)">+</button>
+      <button class="number" onclick="insertNum(`.`)">.</button>
+      <button class="number" onclick="insertNum(0)">0</button>
+      <button class="equal span-two" onclick="equal()">=</button>
     </div>
     <script src="script.js"></script>
   </body>
